@@ -12,9 +12,10 @@
     <script src="js/modernizr.js"></script>
     <script>
       $(function() {
-      $("#tabs construction").tabs();
+      $( "#tabs" ).tabs();
       });
     </script>
+
 </head>
 <body id="earth">
     <div id="wrapper">
@@ -30,13 +31,13 @@
             <h2>Items available</h2>
             <span class="money">1 500 000 €</span>
          </header><!--/top-bar-->
-         <div class="sidetabs">
+         <div class="sidetabs" id="tabs">
             <ul class="nav">
-               <li class="active"><a href="#">Construction</a></li>
-               <li><a href="#">Energy</a></li>
-               <li><a href="#">Robots</a></li>
+               <li class="active"><a href="#tabs-construction">Construction</a></li>
+               <li><a href="#tabs-energy">Energy</a></li>
+               <li><a href="#tabs-robots">Robots</a></li>
             </ul>
-            <div class="tab construction">
+            <div class="tab construction" id="tabs-construction">
                <ul>
                   <li>
                      <img width="70" height="70" />
@@ -69,6 +70,31 @@
                   
                </ul>
             </div>
+
+	    <div class="tab energy" id="tabs-energy">
+	      <ul>
+		<li>
+	          <img width="70" height="70" />
+                  <span class="item-title">Powerplant</span>
+                  <a href="#" class="add-item">+</a>
+		  <span class="effect">+10 energy</span>
+                  <span class="price">50 0000€</span>
+		</li>
+	      </ul>
+	    </div>
+
+            <div class="tab robots" id="tabs-robots">
+	      <ul>
+	        <li>
+                  <img width="70" height="70" />
+                  <span class="item-title">Robot</span>
+                  <a href="#" class="add-item">+</a>
+		  <span class="effect">+1 robots</span>
+                  <span class="price">6 000€</span>
+		</li>
+              </ul>
+            </div>
+
 
          </div><!--/sidetabs-->
          <footer>
