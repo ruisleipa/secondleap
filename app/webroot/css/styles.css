@@ -297,6 +297,7 @@ form#login input[type=submit]:hover {
    background: #fff;
 }
 #statusbar div {
+   margin-top: 5px;
    display: block;
    float: left;
    padding: 0.2em 1em;
@@ -308,6 +309,7 @@ form#login input[type=submit]:hover {
    text-align: center;
    display: block;
    float: left;
+   font-size: 12px;
 }
 #statusbar div span span {
    display: block;
