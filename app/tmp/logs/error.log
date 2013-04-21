@@ -23,3 +23,28 @@ Stack Trace:
 #14 C:\wamp\www\moon\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #15 C:\wamp\www\moon\index.php(43): require('C:\wamp\www\moo...')
 #16 {main}
+2013-04-21 07:45:15 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'Selected driver is not enabled',
+  'enabled' => false,
+)
+Request URL: /moon/
+Stack Trace:
+#0 C:\wamp\www\moon\lib\Cake\Model\ConnectionManager.php(108): DboSource->__construct(Array)
+#1 C:\wamp\www\moon\lib\Cake\Model\Model.php(3215): ConnectionManager::getDataSource('default')
+#2 C:\wamp\www\moon\lib\Cake\Model\Model.php(1108): Model->setDataSource('default')
+#3 C:\wamp\www\moon\lib\Cake\Model\Model.php(3237): Model->setSource('users')
+#4 C:\wamp\www\moon\lib\Cake\Model\Model.php(1319): Model->getDataSource()
+#5 C:\wamp\www\moon\lib\Cake\View\Helper\FormHelper.php(198): Model->schema()
+#6 C:\wamp\www\moon\lib\Cake\View\Helper\FormHelper.php(448): FormHelper->_introspectModel('User', 'fields')
+#7 C:\wamp\www\moon\app\View\Users\login.ctp(5): FormHelper->create('User')
+#8 C:\wamp\www\moon\lib\Cake\View\View.php(947): include('C:\wamp\www\moo...')
+#9 C:\wamp\www\moon\lib\Cake\View\View.php(909): View->_evaluate('C:\wamp\www\moo...', Array)
+#10 C:\wamp\www\moon\lib\Cake\View\View.php(471): View->_render('C:\wamp\www\moo...')
+#11 C:\wamp\www\moon\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#12 C:\wamp\www\moon\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#13 C:\wamp\www\moon\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\moon\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\moon\index.php(43): require('C:\wamp\www\moo...')
+#16 {main}
