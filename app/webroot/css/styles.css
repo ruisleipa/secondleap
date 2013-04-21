@@ -201,8 +201,10 @@ form#login input[type=submit]:hover {
 }
 .tab ul {
    list-style-type: none;
-   margin-top: 1em;
+   margin: 1em 0 1em 1em;
    text-align: center;
+   height: 320px;
+   overflow-y: scroll;
 }
 .tab .add-item {
    position: absolute;
@@ -217,17 +219,18 @@ form#login input[type=submit]:hover {
    font-weight: bold;
    
    top: 50px;
-   right: 25px;
+   right: 10px;
 }
 
 .tab li {
-   width: 132px;
+   width: 110px;
    float: left;
    margin: 0 10px 10px 0;
    position: relative;
 }
 .tab li .item-title {
    display: block;
+   font-size: 12px;
 }
 
 
@@ -243,6 +246,19 @@ form#login input[type=submit]:hover {
    line-height: 46px;
    padding: 0 15px;
    color: #555;
+}
+
+.effect {
+   background: #ddd;
+   border-radius: 2px;
+   font-size: 11px;
+   padding: 0.2em 0.4em;
+}
+.price {
+   font-size: 11px;
+}
+.eart-item-selection li.active {
+   background: #eee;
 }
 #earth input[type=button] {
    width: 100px;
