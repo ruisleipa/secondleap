@@ -192,7 +192,7 @@ form#login input[type=submit]:hover {
 .sidetabs .nav li:last-child a {
    border-right: 0;
 }
-.sidetabs .nav li.active a {
+.sidetabs .nav li.ui-state-active a {
    font-weight: bold;
    color: #000;
 }
