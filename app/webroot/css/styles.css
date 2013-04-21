@@ -26,7 +26,7 @@ h1 , h2{
 
 /* Login page */
 
-form {
+#UserLoginForm {
    width: 320px;
    margin: 0 auto;
 }
@@ -322,12 +322,14 @@ form {
 
 table#map {
 	-webkit-transform: scaleY(0.5) rotate(45deg);
-	position: absolute;
+	position: relative;;
 	top: 150px;
-   left: 100px;
+   border-collapse: separate;
+   
+	margin:0 auto;
 }
 #map td{
-   border-collapse: collapse;
+   border-collapse: separate;
    border: 2px #aaa solid;
    width:40px;
    height:40px;
