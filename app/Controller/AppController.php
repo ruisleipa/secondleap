@@ -34,7 +34,7 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 	public $components = array('Session',
 	'Auth' => array(
-		'loginRedirect' => array('controller' => 'games', 'action' => 'index'),
+		'loginRedirect' => 'earth', //array('controller' => 'games', 'action' => 'index'),
 		'logoutRedirect' => array('controller' => 'users', 'action' => 'display', 'home')
 		));
 }

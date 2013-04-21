@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Moon</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="jquery-2.0.0.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script>
+      $(function() {
+      $( "#tabs" ).tabs();
+      });
+    </script>
+
+</head>
+<body id="moon">
+    <div id="wrapper">
+      <div id="statusbar">
+         <div>
+            <span id="energy"><span class="icon-lightning"></span><span class="value">20</span></span>
+         </div>
+         <div>
+            <span id="regolith"><span class="title">Regolith</span><span class="value">128</span></span>
+            <span id="bricks"><span class="title">Brics</span><span class="value">12</span></span>
+            <span id="metals"><span class="title">Metals</span><span class="value">5</span></span>
+         </div>
+         <div>
+            <span id="water"><span class="title">H<sub>2</sub>O</span><span class="value">80</span></span>
+            <span id="oxygen"><span class="title">O<sub>2</sub></span><span class="value">80</span></span>
+         </div>
+         <div>
+            <span><span class="title">Money</span><span class="value">1,23M</span></span>
+          </div>
+      </div><!--/statusbar-->
+      <div id="left-column">
+         <table id="map">
+            <tr><td><td><td><td><td><td><td><td></tr>
+            <tr><td><td><td><td><td><td><td><td></tr>
+            <tr><td><td><td><td><td><td><td><td></tr>
+            <tr><td><td><td><td><td><td><td><td></tr>
+            <tr><td><td><td><td><td><td><td><td></tr>
+            <tr><td><td><td><td><td><td><td><td></tr>
+            <tr><td><td><td><td><td><td><td><td></tr>
+            <tr><td><td><td><td><td><td><td><td></tr>
+
+         </table>
+      </div>
+      <div id="right-column">
+         <div class="sidetabs" id="tabs">
+            <ul class="nav">
+               <li class="active"><a href="#tabs-inventory"><span class="icon-rocket"></span>Inventory</a></li>
+               <li><a href="#tabs-build"><span class="icon-hammer"></span>Build</a></li>
+               <li><a href="#tabs-trade"><span class="icon-coin"></span>Trade</a></li>
+               <li><a href="#tabs-robots"><span class="icon-cogs"></span>Robots</a></li>
+            </ul>
+            <div class="tab construction" id="tabs-inventory">
+               <ul>
+                  <li>
+                     <img width="70" height="70" />
+                     <span class="item-title">CMB Maker</span>
+                     <span class="effect">+2 II c</span>
+                     <span class="price">10 0000€</span>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="tab build" id="tabs-build">
+               <ul>
+                  <li>
+                     <img width="70" height="70" />
+                     <span class="item-title">Build something</span>
+                     <span class="effect">+?????</span>
+                     <span class="price">10 0000€</span>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="tab trade" id="tabs-trade">
+               <ul>
+                  <li>
+                     <img width="70" height="70" />
+                     <span class="item-title">Trade</span>                    
+                  </li>
+               </ul>
+            </div>
+
+            <div class="tab robots" id="tabs-robots">
+               <ul>
+                  <li>
+                     <img width="70" height="70" />
+                     <span class="item-title">Give orders</span>
+                  </li>
+               </ul>
+            </div>
+
+         </div><!--sidetabs-->
+         <footer>
+            <a href="/earth">Back to earth</a>
+         </footer>
+         
+      </div>
+        
+    </div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 
 <div id="wrapper">
-<h1>Space Industry</h1>
+<h1>Second Leap</h1>
 <h2>Registration</h2>
 <div id="login" class="users form">
 <?php echo $this->Form->create('User'); ?>

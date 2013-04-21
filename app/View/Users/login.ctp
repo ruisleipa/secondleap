@@ -1,9 +1,9 @@
 <div id="wrapper">
-<h1>Space Industry</h1>
+<h1>Second Leap</h1>
 
 <div id="login" class="users form">
-<?php echo $this->Form->create('User'); ?>
 <?php echo $this->Session->flash(); ?>
+<?php echo $this->Form->create('User'); ?>
             <div>
         <?php echo $this->Form->input('username');
         echo $this->Form->input('password');
@@ -17,4 +17,5 @@
         </div>
 
 </div>
+
 

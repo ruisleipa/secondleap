@@ -23,6 +23,8 @@
  */
 	Router::connect('/', array('controller' => 'users', 'action' => 'login'));
 	Router::connect('/register', array('controller' => 'users', 'action' => 'add'));
+	Router::connect('/moon', array('controller' => 'pages', 'action' => 'display', 'moon'));
+	Router::connect('/earth', array('controller' => 'pages', 'action' => 'display', 'earth'));
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
