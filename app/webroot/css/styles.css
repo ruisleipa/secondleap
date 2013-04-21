@@ -23,6 +23,9 @@ h1 {
    margin: 0 auto;
    padding-top: 100px;
 }
+
+/* Login page */
+
 form {
    width: 320px;
    margin: 0 auto;
@@ -64,6 +67,8 @@ form#login input[type=submit]:hover {
    
 } 
 
+/* Actual game */
+
 #earth, #moon {
    background: #000;
 }
@@ -83,6 +88,7 @@ form#login input[type=submit]:hover {
    float: left;
 }
 #earth #left-column {
+   background: url(../img/earth.jpg) no-repeat -20px -50px;
    height: 510px;
 }
 
@@ -94,10 +100,21 @@ form#login input[type=submit]:hover {
    text-align: left;
    padding: 0.3em 0.5em;
    box-shadow: 0 0 10px #000;
+   background-image: linear-gradient(bottom, rgb(209,209,209) 9%, rgb(235,235,235) 55%);
+   background-image: -o-linear-gradient(bottom, rgb(209,209,209) 9%, rgb(235,235,235) 55%);
+   background-image: -moz-linear-gradient(bottom, rgb(209,209,209) 9%, rgb(235,235,235) 55%);
+   background-image: -webkit-linear-gradient(bottom, rgb(209,209,209) 9%, rgb(235,235,235) 55%);
+   background-image: -ms-linear-gradient(bottom, rgb(209,209,209) 9%, rgb(235,235,235) 55%);
+
+   background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.09, rgb(209,209,209)),
+      color-stop(0.55, rgb(235,235,235))
+   );
 }
-#earth #left-column {
-   background: url(../img/earth.jpg) no-repeat -20px -50px;
-}
+
 
 #introduction {
    position: absolute;
@@ -120,7 +137,7 @@ form#login input[type=submit]:hover {
    position: absolute;
    top: 0;
    right: 0;
-   box-shadow: 0 0 5px #000;
+   box-shadow: 0 0 5px #222;
    height: 100%;
 }
 #right-column header {
@@ -132,23 +149,18 @@ form#login input[type=submit]:hover {
    font-size: 14px;
    line-height: 46px;
    color: #fff;
+   font-weight: normal;
    text-transform: uppercase;
    margin: 0;
-   padding: 0 0.5em;
+   padding: 0 1em;
 }
-#earth .money  {
-   display: block;
-   width: 100px;
-   float: right;
-   background: #fff;
-   height: 46px;
-   line-height: 46px;
-   padding: 0 15px;
-}
-#earth input[type=button] {
-   width: 100px;
-   float: right;
-}
+
+
+
+
+/* Tab styles */
+
+
 .sidetabs {
    border-bottom: 1px solid #eee;
    height: 380px;
@@ -159,6 +171,7 @@ form#login input[type=submit]:hover {
    list-style: none;
    border-bottom: 1px solid #ddd;
    border-top: 1px solid #f1f1f1;
+   box-shadow: 0 0 3px #ddd;
    
 }
 .sidetabs .nav li {
@@ -188,8 +201,10 @@ form#login input[type=submit]:hover {
 }
 .tab ul {
    list-style-type: none;
-   margin-top: 1em;
+   margin: 1em 0 1em 1em;
    text-align: center;
+   height: 320px;
+   overflow-y: scroll;
 }
 .tab .add-item {
    position: absolute;
@@ -204,27 +219,75 @@ form#login input[type=submit]:hover {
    font-weight: bold;
    
    top: 50px;
-   right: 25px;
+   right: 10px;
 }
 
 .tab li {
-   width: 132px;
+   width: 110px;
    float: left;
    margin: 0 10px 10px 0;
    position: relative;
 }
 .tab li .item-title {
    display: block;
+   font-size: 12px;
+}
+
+
+/* Earth specific styles */
+
+
+#earth .money  {
+   display: block;
+   width: 100px;
+   float: right;
+   background: #ddd;
+   height: 46px;
+   line-height: 46px;
+   padding: 0 15px;
+   color: #555;
+}
+
+.effect {
+   background: #ddd;
+   border-radius: 2px;
+   font-size: 11px;
+   padding: 0.2em 0.4em;
+}
+.price {
+   font-size: 11px;
+}
+.eart-item-selection li.active {
+   background: #eee;
+}
+#earth input[type=button] {
+   width: 100px;
+   float: right;
+   margin-top: 15px;
 }
 #earth footer {
    padding: 0.5em 0.3em;
 }
 #earth footer p {
-   float: left;
-   width: 170px;
+   font-size: 11px;
+   margin: 0;
 }
+#earth .cost {
+   float: left;
+   width: 150px;
+   padding: 0.5em;
+}
+
+.subcost {
+   border-bottom: 1px dashed #ddd;
+   padding-bottom: 0.5em;
+}
+
 #earth footer input {
 }
+
+/* Moon specific styles */
+
 #moon #left-column {
    background: url(../img/moon.jpg) no-repeat;
 }
@@ -250,49 +313,28 @@ form#login input[type=submit]:hover {
    display: block;
    float: none;
 }
-td{
-	border-collapse: collapse;
-	border: 2px #aaa solid;
-	width:40px;
-	height:40px;
-	margin: 0;
-}
-
-td:hover {
-	border: 2px white solid;
-
-}
-
-td:active {
-	border: 2px red solid;
-}
 
 
-table{
+table#map {
 	-webkit-transform: scaleY(0.5) rotate(45deg);
 	position: absolute;
 	top: 150px;
    left: 100px;
 }
+#map td{
+   border-collapse: collapse;
+   border: 2px #aaa solid;
+   width:40px;
+   height:40px;
+   margin: 0;
+}
 
-
-/*
-#moon #right-column ul {
-   list-style: none;
-   text-align: center;
-}
-#moon #right-column li {
+#map td:hover {
+   border: 2px white solid;
 
 }
-#moon #right-column li a {
-   display: block;
-   color: #444;
-   text-decoration: none;
-   padding: 1em;
-   border-bottom: 1px solid #ddd;
-   transition: 0.2s background;
+
+#map td:active {
+   border: 2px red solid;
 }
-#moon #right-column li a:hover {
-   background: #f1f1f1;
-}
-*/
+
