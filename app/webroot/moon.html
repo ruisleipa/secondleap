@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/iconfont.css">
-    <script src="jquery-2.0.0.js"</script>
+    <script src="jquery-2.0.0.js"></script>
     <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
     <script src="js/modernizr.js"></script>
     <script>
       $(function() {
-      $("#tab").tabs();
+      $( "#tabs" ).tabs();
       });
     </script>
 
@@ -51,16 +51,14 @@
          </table>
       </div>
       <div id="right-column">
-         <div class="sidetabs">
+         <div class="sidetabs" id="tabs">
             <ul class="nav">
-               <li class="active"><a href="#"><span class="icon-rocket"></span>Inventory</a></li>
-               <li><a href="#"><span class="icon-hammer"></span>Build</a></li>
-               <li><a href="#"><span class="icon-coin"></span>Trade</a></li>
-               <li><a href="#"><span class="icon-cogs"></span>Robots</a></li>
-
-               
+               <li class="active"><a href="#tabs-inventory"><span class="icon-rocket"></span>Inventory</a></li>
+               <li><a href="#tabs-build"><span class="icon-hammer"></span>Build</a></li>
+               <li><a href="#tabs-trade"><span class="icon-coin"></span>Trade</a></li>
+               <li><a href="#tabs-robots"><span class="icon-cogs"></span>Robots</a></li>
             </ul>
-            <div class="tab construction">
+            <div class="tab construction" id="tabs-inventory">
                <ul>
                   <li>
                      <img width="70" height="70" />
@@ -70,6 +68,36 @@
                   </li>
                </ul>
             </div>
+
+            <div class="tab build" id="tabs-build">
+               <ul>
+                  <li>
+                     <img width="70" height="70" />
+                     <span class="item-title">Build something</span>
+                     <span class="effect">+?????</span>
+                     <span class="price">10 0000€</span>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="tab trade" id="tabs-trade">
+               <ul>
+                  <li>
+                     <img width="70" height="70" />
+                     <span class="item-title">Trade</span>                    
+                  </li>
+               </ul>
+            </div>
+
+            <div class="tab robots" id="tabs-robots">
+               <ul>
+                  <li>
+                     <img width="70" height="70" />
+                     <span class="item-title">Give orders</span>
+                  </li>
+               </ul>
+            </div>
+
          </div><!--sidetabs-->
          <footer>
             <a href="earth.html">Back to earth</a>
