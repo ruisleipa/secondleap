@@ -69,7 +69,6 @@ form#login input[type=submit]:hover {
 }
 #earth #wrapper, #moon #wrapper {
    width: 1000px;
-   height: 490px;
    margin: 0 auto;
    padding-top: 0;
    box-shadow: 0 0 10px #fff;
@@ -83,6 +82,10 @@ form#login input[type=submit]:hover {
    height: 470px;
    float: left;
 }
+#earth #left-column {
+   height: 510px;
+}
+
 #earth h1 {
    color: #333;
    font-weight: normal;
@@ -93,7 +96,7 @@ form#login input[type=submit]:hover {
    box-shadow: 0 0 10px #000;
 }
 #earth #left-column {
-   background: url(../img/earth.jpg) no-repeat;
+   background: url(../img/earth.jpg) no-repeat -20px -50px;
 }
 
 #introduction {
@@ -118,6 +121,7 @@ form#login input[type=submit]:hover {
    top: 0;
    right: 0;
    box-shadow: 0 0 5px #000;
+   height: 100%;
 }
 #right-column header {
    background: #777;
@@ -224,6 +228,7 @@ form#login input[type=submit]:hover {
 #moon #left-column {
    background: url(../img/moon.jpg) no-repeat;
 }
+
 #statusbar {
    height: 45px;
    background: #fff;
@@ -269,9 +274,8 @@ table{
 	top: 150px;
    left: 100px;
 }
-#moon #right-column {
-   height: 500px;
-}
+
+
 /*
 #moon #right-column ul {
    list-style: none;
