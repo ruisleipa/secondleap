@@ -12,7 +12,7 @@ body {
    min-height: 100%;
    padding: 20px 0;
 }
-h1 {
+h1 , h2{
    color: #fff;
    text-align: center;
    margin: 0 0 1em;
@@ -27,26 +27,31 @@ form {
    width: 320px;
    margin: 0 auto;
 }
-.loginpage input {
+#UserLoginForm input, #UserAddForm input {
    outline: 4px solid rgba(200, 200, 200, 0.5);
    display: block;
    width: 300px;
    padding: 0.5em 0.5em;
    margin-bottom: 1em;
+   margin-top: 0.25em;
    color: #555;
    
 }
-form#login div p {
+#UserLoginForm label, #UserAddForm label{
+   color: #fff;
+   padding-bottom: 4px;
+}
+#UserLoginForm div p, #UserAddForm div p {
    color: #fff;
    float: left;
    margin-top: 0;
 }
-form#login div p a {
+#UserLoginForm div p a {
    color: #fff;
 }
-form#login input[type=submit], #earth footer input {
+#UserLoginForm input[type=submit], #UserAddForm input[type=submit], #earth footer input {
    float: right;
-   width: 100px;
+   width: 120px;
    line-height: 30px;
    font-size: 18px;
    text-transform: uppercase;
@@ -59,7 +64,7 @@ form#login input[type=submit], #earth footer input {
    padding: 0.3em 0.5em;
    transition: 0.2s background;
 }
-form#login input[type=submit]:hover {
+#UserLoginForm input[type=submit]:hover {
    background: #222;
    
 } 
